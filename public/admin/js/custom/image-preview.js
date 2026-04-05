@@ -1,11 +1,27 @@
 var PREVIEW_MAX_FILE_BYTES = 10 * 1024 * 1024; // 10 MiB (matches server PRODUCT_THUMBNAIL_MAX_FILE_KB)
 
+function resolvePreviewImg(input) {
+    var wrap = input.closest(".upload-img-box");
+    if (wrap) {
+        var img = wrap.querySelector("img");
+        if (img) {
+            return img;
+        }
+    }
+    var prev = input.previousElementSibling;
+    return prev && prev.tagName === "IMG" ? prev : null;
+}
+
 function previewFile(input) {
     "use strict";
 
-    var preview = input.previousElementSibling;
+    var preview = resolvePreviewImg(input);
     var file = input.files[0];
     var reader = new FileReader();
+
+    if (!preview) {
+        return;
+    }
 
     if (!file) {
         preview.src = "";
@@ -31,9 +47,13 @@ function previewFile(input) {
 function preview815639DimensionsFile(input) {
     "use strict";
 
-    var preview = input.previousElementSibling;
+    var preview = resolvePreviewImg(input);
     var file = input.files[0];
     var reader = new FileReader();
+
+    if (!preview || !file) {
+        return;
+    }
 
     var img = new Image();
     img.src = window.URL.createObjectURL( file );
@@ -53,10 +73,13 @@ function preview815639DimensionsFile(input) {
 function preview35DimensionsFile(input) {
     "use strict";
 
-    var preview = input.previousElementSibling;
+    var preview = resolvePreviewImg(input);
     var file = input.files[0];
     var reader = new FileReader();
 
+    if (!preview || !file) {
+        return;
+    }
 
     var img = new Image();
     img.src = window.URL.createObjectURL( file );
@@ -76,9 +99,13 @@ function preview35DimensionsFile(input) {
 function preview44DimensionsFile(input) {
     "use strict";
 
-    var preview = input.previousElementSibling;
+    var preview = resolvePreviewImg(input);
     var file = input.files[0];
     var reader = new FileReader();
+
+    if (!preview || !file) {
+        return;
+    }
 
     var img = new Image();
     img.src = window.URL.createObjectURL( file );
@@ -99,9 +126,13 @@ function preview44DimensionsFile(input) {
 function preview312369DimensionFile(input) {
     "use strict";
 
-    var preview = input.previousElementSibling;
+    var preview = resolvePreviewImg(input);
     var file = input.files[0];
     var reader = new FileReader();
+
+    if (!preview || !file) {
+        return;
+    }
 
     if (file.type === 'image/png' || file.type === 'image/jpg' || file.type === 'image/jpeg')
     {
@@ -152,9 +183,13 @@ function preview312369DimensionFile(input) {
 function preview125DimensionFile(input) {
     "use strict";
 
-    var preview = input.previousElementSibling;
+    var preview = resolvePreviewImg(input);
     var file = input.files[0];
     var reader = new FileReader();
+
+    if (!preview || !file) {
+        return;
+    }
 
     if (file.type === 'image/png' || file.type === 'image/jpg' || file.type === 'image/jpeg')
     {

@@ -29,10 +29,7 @@
                         <div class="productEdit-thumb">
                             <label for="product_category_id" class="zForm-label"> {{ __('Thumbnail Image') }}</label>
                             <div class="upload-img-box w-100 h-100">
-                                @if(file_exists($product->thumbnail_image_id))
-                                @else
-                                <img class="h-100" src="{{ getFileUrl($product->thumbnail_image_id) }}">
-                                @endif
+                                <img class="h-100" src="{{ $product->thumbnail_image_id ? getFileUrl($product->thumbnail_image_id) : getDefaultImage() }}" alt="">
                                 <input type="file" name="thumbnail_image" id="thumbnail_image" accept="image/*" onchange="previewFile(this)">
                                 <div class="upload-img-box-icon">
                                     <i class="fa fa-camera"></i>
@@ -204,7 +201,7 @@
 @endpush
 
 @push('script')
-    <script src="{{asset('admin/js/custom/image-preview.js')}}"></script>
+    <script src="{{ asset('admin/js/custom/image-preview.js') }}?v={{ filemtime(public_path('admin/js/custom/image-preview.js')) }}"></script>
     <script>
         'use strict'
         const productTypeCategoryRoute = "{{ route('admin.product.product-type.category') }}";
