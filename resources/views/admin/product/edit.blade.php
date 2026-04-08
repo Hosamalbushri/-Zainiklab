@@ -201,7 +201,7 @@
 @endpush
 
 @push('script')
-    <script src="{{ asset('admin/js/custom/image-preview.js') }}?v={{ filemtime(public_path('admin/js/custom/image-preview.js')) }}"></script>
+    <script src="{{asset('admin/js/custom/image-preview.js')}}"></script>
     <script>
         'use strict'
         const productTypeCategoryRoute = "{{ route('admin.product.product-type.category') }}";
