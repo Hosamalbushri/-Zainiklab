@@ -45,7 +45,7 @@ class BlogController extends Controller
             'title' => ['required', 'min:2', 'max:255'],
             'slug' => ['required', 'min:2', 'max:255'],
             'details' => ['required'],
-            'image' => 'mimes:jpeg,png,jpg|file|max:1024'
+            'image' => 'mimes:jpeg,png,jpg|file|max:10240'
         ]);
 
         if (Blog::where('slug', $request->slug)->count() > 0)
@@ -98,7 +98,7 @@ class BlogController extends Controller
             'title' => ['required', 'min:2', 'max:255'],
             'slug' => ['required', 'min:2', 'max:255'],
             'details' => ['required'],
-            'image' => 'mimes:jpeg,png,jpg|file|max:1024'
+            'image' => 'mimes:jpeg,png,jpg|file|max:10240'
         ]);
 
         if (Blog::where('slug', $request->slug)->where('uuid', '!=', $uuid)->count() > 0)

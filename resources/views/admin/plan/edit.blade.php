@@ -128,7 +128,7 @@
                         @if ($errors->has('logo'))
                             <span class="text-danger"><i class="fas fa-exclamation-triangle"></i> {{ $errors->first('logo') }}</span>
                         @endif
-                        <p>Accepted Image Files: PNG <br> Recommend Size: 80 x 80 (1MB)</p>
+                        <p>Accepted Image Files: PNG <br> Recommend Size: 80 x 80 (10MB)</p>
                     </div>
                 </div>
                 <h2 class="fs-24 fw-500 lh-28 text-primary-dark-text pb-24">{{__('Benefits')}}</h2>

@@ -87,7 +87,7 @@
                                             <p class="m-0">{{__('Image')}}</p>
                                         </div>
                                     </div>
-                                    <p>{{ __('Accepted Image Files') }}: JPEG, JPG, PNG <br> {{ __('Recommend Size') }}: 300 x 300 (1MB)</p>
+                                    <p>{{ __('Accepted Image Files') }}: JPEG, JPG, PNG <br> {{ __('Recommend Size') }}: 300 x 300 (10MB)</p>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="address">{{__('Cover Image')}} </label>
@@ -103,7 +103,7 @@
                                             <p class="m-0">{{__('Image')}}</p>
                                         </div>
                                     </div>
-                                    <p>{{ __('Accepted Image Files') }}: JPEG, JPG, PNG <br> {{ __('Recommend Size') }}: (1MB)</p>
+                                    <p>{{ __('Accepted Image Files') }}: JPEG, JPG, PNG <br> {{ __('Recommend Size') }}: (10MB)</p>
                                 </div>
                             </div>
 

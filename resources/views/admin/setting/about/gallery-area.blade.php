@@ -70,7 +70,7 @@
                                     </p>
                                     <p class="fs-14 fw-400 lh-20 text-para-text pt-8"><span
                                             class="fw-500 text-primary-dark-text">{{ __('Recommend Size') }}:</span> 312
-                                        x 348 (1MB)</p>
+                                        x 348 (10MB)</p>
                                 </div>
                             </div>
 
@@ -93,7 +93,7 @@
                                     </p>
                                     <p class="fs-14 fw-400 lh-20 text-para-text pt-8"><span
                                             class="fw-500 text-primary-dark-text">{{ __('Recommend Size') }}:</span> 312
-                                        x 348 (1MB)</p>
+                                        x 348 (10MB)</p>
                                 </div>
                             </div>
 
@@ -116,7 +116,7 @@
                                     </p>
                                     <p class="fs-14 fw-400 lh-20 text-para-text pt-8"><span
                                             class="fw-500 text-primary-dark-text">{{ __('Recommend Size') }}:</span> 312
-                                        x 348 (1MB)</p>
+                                        x 348 (10MB)</p>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-4 col-md-6">
@@ -138,7 +138,7 @@
                                     </p>
                                     <p class="fs-14 fw-400 lh-20 text-para-text pt-8"><span
                                             class="fw-500 text-primary-dark-text">{{ __('Recommend Size') }}:</span> 312
-                                        x 348 (1MB)</p>
+                                        x 348 (10MB)</p>
                                 </div>
                             </div>
                         </div>

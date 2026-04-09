@@ -32,7 +32,7 @@ class PlanRequest extends FormRequest
             'device_limit' => 'required',
             'download_limit_type' => 'required',
             'download_limit' => 'exclude_unless:download_limit_type,2|required',
-            'logo' => 'mimes:jpg,jpeg,png|file|max:1024'
+            'logo' => 'mimes:jpg,jpeg,png|file|max:10240'
         ];
     }
 }

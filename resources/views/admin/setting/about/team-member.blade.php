@@ -75,7 +75,7 @@
                                                                     class="text-black">{{ __('Accepted Size') }}:</span>
                                                                 312
                                                                 x 369
-                                                                (1MB)</p>
+                                                                (10MB)</p>
                                                         </div>
                                                     </div>
 
@@ -131,7 +131,7 @@
                                                         JPEG,
                                                         PNG <br> <span
                                                             class="text-black">{{ __('Accepted Size') }}:</span> 312
-                                                        x 369 (1MB)</p>
+                                                        x 369 (10MB)</p>
                                                 </div>
 
                                                 <div class="custom-form-group mb-3 col-lg-4">

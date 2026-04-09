@@ -135,7 +135,7 @@
                         @if ($errors->has('logo'))
                             <span class="text-danger"><i class="fas fa-exclamation-triangle"></i> {{ $errors->first('logo') }}</span>
                         @endif
-                        <p>{{ __('Accepted Files') }}: PNG <br> {{ __('Recommend Size') }}: 80 x 80 (1MB)
+                        <p>{{ __('Accepted Files') }}: PNG <br> {{ __('Recommend Size') }}: 80 x 80 (10MB)
                         </p>
                     </div>
                 </div>

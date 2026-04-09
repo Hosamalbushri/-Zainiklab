@@ -76,7 +76,7 @@
                         @if ($errors->has('image'))
                             <span class="text-danger"><i class="fas fa-exclamation-triangle"></i> {{ $errors->first('image') }}</span>
                         @endif
-                        <p>Accepted Image Files: JPEG, JPG, PNG <br> Recommend Size: 870 x 500 (1MB)</p>
+                        <p>Accepted Image Files: JPEG, JPG, PNG <br> Recommend Size: 870 x 500 (10MB)</p>
                     </div>
                 </div>
 
