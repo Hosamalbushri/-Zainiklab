@@ -451,7 +451,11 @@ class ProductController extends Controller
                         ->whereDate('created_at', Carbon::today())
                         ->where('download_products.customer_id', auth()->id())
                         ->count();
-                    if (($checkLimit >= getOption('free_download_per_day')) || !$customerPlan) {
+                    $freePerDay = (int) getOption('free_download_per_day');
+                    if ($freePerDay < 1) {
+                        $freePerDay = 1;
+                    }
+                    if ($checkLimit >= $freePerDay) {
                         DB::rollBack();
                         return back()->with('error', __('Daily Download limit exceed'));
                     }
